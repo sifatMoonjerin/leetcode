@@ -1,12 +1,10 @@
 def reverseString(s):
-        n = len(s)   
-        r = int((n/2)//1)
-        
-        for i in range(r):  
-            s[i], s[n-1-i] = s[n-1-i], s[i]
-
-        # single line solution
-        # s.reverse()
+        left = 0
+        right = len(s)-1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
             
         print(s)
 
