@@ -8,12 +8,21 @@ def getSum(n):
         
     
 def isHappy(n):
-    count = {}
+    slow = n
+    fast = n
     
-    while n!=1:
-        n = getSum(n)
-        if n in count:
-            return False
-        count[n] = n
+    while True:
+        slow = getSum(slow)
+        fast = getSum(fast)
+        fast = getSum(fast)
+        if fast == 1: return True
+        if fast == slow: return False
+    # count = {}
     
-    return True
+    # while n!=1:
+    #     n = getSum(n)
+    #     if n in count:
+    #         return False
+    #     count[n] = n
+    
+    # return True
