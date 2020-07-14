@@ -1,6 +1,9 @@
 def intersect(nums1, nums2):
         # count = {}
         # result = []
+
+        # if len(nums1) > len(nums2):
+        # nums1, nums2 = nums2, nums1
         
         # for num in nums1:
         #     count[num] = count.get(num, 0) + 1
