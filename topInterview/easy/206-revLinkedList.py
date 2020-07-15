@@ -9,14 +9,10 @@ def reverseList(head):
         if not head:
             return head
         
-        p = None
-        c = head
-        n = None
-        
-        while c != None:
-            n = c.next
-            c.next = p
-            p = c
-            c = n
-        
-        return p
+        prev = None
+        while head:
+            cur = head
+            head = head.next
+            cur.next = prev
+            prev = cur
+        return prev
