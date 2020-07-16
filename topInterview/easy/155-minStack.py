@@ -2,7 +2,7 @@ class MinStack:
     def __init__(self):
         self.stack = []
 
-    def push(self, x: int):
+    def push(self, x):
         curMin = self.getMin()
         if curMin == None or x < curMin:
             curMin = x
