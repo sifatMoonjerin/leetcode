@@ -6,5 +6,4 @@ def shuffle(nums, n):
         newL.append(nums[y])
         x += 1
         y += 1
-    
     return newL
