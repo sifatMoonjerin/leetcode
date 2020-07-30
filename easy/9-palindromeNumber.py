@@ -7,14 +7,16 @@ def isPalindrome(x: int) -> bool:
     #     l += 1
     #     r -= 1
     # return True
-    if x < 0: return False
-    
+    if x < 0:
+        return False
+
     prevX, newX = x, 0
-    
+
     while x:
-        newX = (x%10) + newX*10
+        newX = (x % 10) + newX*10
         x //= 10
-    
+
     return prevX == newX
+
 
 print(isPalindrome(343))

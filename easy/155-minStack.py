@@ -10,7 +10,7 @@ class MinStack:
 
     def pop(self):
         self.stack.pop()
-        
+
     def top(self):
         return self.stack[- 1][0]
 
@@ -19,4 +19,3 @@ class MinStack:
             curMin = self.stack[-1][1]
             return curMin
         return None
-        
